@@ -63,6 +63,7 @@ nav:
       - base64: 'limitations/base64.md'
       - collections: 'limitations/collections.md'
       - copy: 'limitations/copy.md'
+      - csv: 'limitations/csv.md'
       - datetime: 'limitations/datetime.md'
       - functools: 'limitations/functools.md'
       - hashlib: 'limitations/hashlib.md'
