@@ -764,7 +764,16 @@ impl MontyTypeExt for MontyType {
             Type::Partial => Self::Partial,
             Type::GenericAlias => Self::GenericAlias,
             Type::Union => Self::Union,
-            Type::Random | Type::HashlibHash | Type::HashlibHashXof | Type::Blake2b | Type::Blake2s => return None,
+            Type::Random
+            | Type::HashlibHash
+            | Type::HashlibHashXof
+            | Type::Blake2b
+            | Type::Blake2s
+            | Type::CsvReader
+            | Type::CsvWriter
+            | Type::CsvDictReader
+            | Type::CsvDictWriter
+            | Type::CsvDialect => return None,
             Type::Tuple => Self::Tuple,
             Type::NamedTuple => Self::NamedTuple,
             Type::Dict => Self::Dict,
