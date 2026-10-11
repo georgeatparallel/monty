@@ -90,8 +90,12 @@ Swap `CodeModeToolset(weather_toolset)` for `weather_toolset` to see the same ta
 
 ## Worked examples in the repository
 
-Each directory under [`examples/`](https://github.com/pydantic/monty/tree/main/examples) is runnable from a dev build of the package it uses; its README has the commands.
+Each directory under [`examples/`](https://github.com/pydantic/monty/tree/main/examples) has a README with installation
+and run commands.
 
+- [`parallel_search`](https://github.com/pydantic/monty/tree/main/examples/parallel_search): search the web and fetch
+    a page through anonymous Parallel MCP host callbacks, then process the results inside Monty.
+    A fixed snippet runs without a model API key; its script declares the released client and worker dependencies.
 - [`sql_playground`](https://github.com/pydantic/monty/tree/main/examples/sql_playground): customer purchase data in CSV
     joined with tweets in JSON, with sentiment analysis called in a loop from the sandbox.
     With JSON tool calling the 50+ per-tweet results would flood the context window; in Monty they stay inside the sandbox

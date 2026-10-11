@@ -22,6 +22,7 @@ dev = [
 ]
 # used only by `examples/`; opt in with `uv run --group examples ...`, `make dev-py` skips it, `make lint-py` needs it
 examples = [
+    "mcp>=1.30,<2",
     "duckdb>=1.0.0",
     "openpyxl>=3.1.5",
     "pillow>=11.0.0",
